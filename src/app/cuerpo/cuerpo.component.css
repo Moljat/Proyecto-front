@@ -1,0 +1,33 @@
+.container {
+    position: relative;
+  }
+
+.background{
+    width: 500px; /* Ajusta según sea necesario */
+    height: 850px; /* Ajusta según sea necesario */
+   
+}
+
+.overlay {
+    position: absolute;
+    top: 4%; /* Ajusta según sea necesario */
+    left: 20%; /* Ajusta según sea necesario */
+    transform: translate(-50%, -50%); /* Centra la imagen superpuesta */
+    width: 500px; /* Ajusta según sea necesario */
+    height: 200px; /* Ajusta según sea necesario */
+    z-index: 1; 
+  }
+
+  .menu {   
+    background-color: aqua;
+
+  }
+  .contenido-derecha {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-right: 65%;
+    width: 200px; /* Ajusta el ancho según sea necesario */
+    height: 100%; /* O ajusta la altura según sea necesario */
+    background-color: black /* Un fondo semi-transparente para que el texto sea legible */
+}

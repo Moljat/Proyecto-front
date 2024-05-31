@@ -1,8 +1,8 @@
 .text-with-border {
     font-size: 80px;
-    padding-left: 1%;
+    padding-left: 15%;
     position: relative;
-    color: antiquewhite; /* Color del texto */
+    color: #FFFBEC; /* Color del texto */
     text-shadow:
       0px 0px 0 #B00400,
       2px -1px 0 #B00400,
@@ -26,14 +26,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center; /* Alinea verticalmente en el centro */
-    border-bottom: 3px solid #B00400;
+    
      
   }
 
 section {
     
     background-color: #B00400;
-    background-color: antiquewhite;
+    background-color: #FFFBEC;
     grid-area: auto;
     
     font-family: 'Old Figaro Cursive', cursive;
