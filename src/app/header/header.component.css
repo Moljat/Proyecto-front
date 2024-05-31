@@ -1,0 +1,51 @@
+.text-with-border {
+    font-size: 80px;
+    padding-left: 1%;
+    position: relative;
+    color: antiquewhite; /* Color del texto */
+    text-shadow:
+      0px 0px 0 #B00400,
+      2px -1px 0 #B00400,
+      -3px 3px 0 #B00400,
+      3px 3px 0 #B00400; /* Color del borde */
+  }
+  .text-with-border2 {
+    font-size: 80px;
+    padding-right: 2%;
+    padding-right: 70%;
+    position: relative;
+    color: antiquewhite; /* Color del texto */
+    text-shadow:
+      -3px -3px 0 #000000,
+      3px -3px 0 #000000,
+      -3px 3px 0 #000000,
+      3px 3px 0 #000000; /* Color del borde */
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Alinea verticalmente en el centro */
+    border-bottom: 3px solid #B00400;
+     
+  }
+
+section {
+    
+    background-color: #B00400;
+    background-color: antiquewhite;
+    grid-area: auto;
+    
+    font-family: 'Old Figaro Cursive', cursive;
+    font-size: 80px;
+
+   
+}
+.logo {
+    width: 100px; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: 100px;/* Ajusta el tamaño de la imagen según sea necesario */
+    fill:#B00400;
+    color: #B00400;
+    align-items: center;
+    align-self: center;
+  }
