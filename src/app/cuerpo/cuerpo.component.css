@@ -1,33 +1,180 @@
 .container {
-    position: relative;
-  }
+  position: relative;
+}
 
 .background{
-    width: 500px; /* Ajusta según sea necesario */
-    height: 850px; /* Ajusta según sea necesario */
-   
+  width: 500px; /* Ajusta según sea necesario */
+  height: 850px; /* Ajusta según sea necesario */
+ 
 }
 
 .overlay {
-    position: absolute;
-    top: 4%; /* Ajusta según sea necesario */
-    left: 20%; /* Ajusta según sea necesario */
-    transform: translate(-50%, -50%); /* Centra la imagen superpuesta */
-    width: 500px; /* Ajusta según sea necesario */
-    height: 200px; /* Ajusta según sea necesario */
-    z-index: 1; 
-  }
+  position: absolute;
+  top: 4%; /* Ajusta según sea necesario */
+  left: 20%; /* Ajusta según sea necesario */
+  transform: translate(-50%, -50%); /* Centra la imagen superpuesta */
+  width: 500px; /* Ajusta según sea necesario */
+  height: 200px; /* Ajusta según sea necesario */
+  z-index: 1; 
+}
 
-  .menu {   
-    background-color: aqua;
+.menu {   
+  
+}
+.contenido-derecha {
+  font-family: 'p5hatty';
+  font-size:xx-large;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-right: 65%;
+  width: 5%; /* Ajusta el ancho según sea necesario */
+  height: 100%; /* O ajusta la altura según sea necesario */
+  background-color: #FEFFEB;
+ 
+}
 
-  }
-  .contenido-derecha {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding-right: 65%;
-    width: 200px; /* Ajusta el ancho según sea necesario */
-    height: 100%; /* O ajusta la altura según sea necesario */
-    background-color: black /* Un fondo semi-transparente para que el texto sea legible */
+/*MI parte*/
+
+.sumas {
+  display: flex;
+/*flex-direction: column;*/
+  align-items: center;
+  justify-content: center;
+  height: 100vh; 
+ /* Ocupa toda la altura de la pantalla */
+  text-align: center;
+}
+/*Precios*/
+nav{
+  position: absolute;
+  display: flex;
+
+    justify-content: center;
+    margin-top: 20%;
+    padding: 10px;
+    width: 100%;
+    
+}
+.menu ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+}
+
+.menu li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.menu li span {
+  margin-right: 5px; /* Ajusta el margen entre el texto y el campo de entrada */
+}
+li{
+
+  padding: 5px -5px;
+}
+li:hover{
+  background-color:black;
+  color:aliceblue;
+  
+}
+input[id='v2']{
+  font-size: 30px;
+  background-color: black;
+  color: aliceblue;
+  border-radius: 50px;
+  margin-left: 195px;
+  text-align: end;
+}
+input[id='v3']{
+  font-size: 30px;
+  background-color: black;
+  color: aliceblue;
+  border-radius: 50px;
+  margin-left: 127px;
+  text-align: end;
+}
+input[id='v1']{
+  font-size: 30px;
+  background-color: black;
+  color: aliceblue;
+  border-radius: 50px;
+  margin-left: 235px;
+  text-align: end;
+}
+
+input[id='v4']{
+  font-size: 30px;
+  background-color: black;
+  color: aliceblue;
+  border-radius: 50px;
+  margin-left: 200px;
+  text-align: end;
+}
+
+input[id='v5']{
+  font-size: 30px;
+  background-color: black;
+  color: aliceblue;
+  border-radius: 50px;
+  margin-left: 190px;
+  text-align: end;
+}
+
+input[id='valor1']{
+  font-size: 30px;
+  background-color: black;
+  color: aliceblue;
+  border-radius: 50px;
+  margin-left: 50px;
+  text-align: end;
+}
+
+input:hover{
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+/*Donde esta el total*/
+.input-section {
+  position:absolute;
+  height: 80px;
+  margin-top: 75%;
+  margin-left: 10%;
+  color: #FEFFEB;
+ /* Agrega margen superior para separar del menú */
+}
+
+.Total{
+  margin-left: 40px;
+  color: rgb(0, 0, 0);
+}
+/*CANTIDAD DISENO*/
+.tituC {
+  position: absolute;
+  top: -1%;
+  right: 10%;
+  height: 20px;
+  width: 165px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #671f00;
+  border: 2px solid #671f00;
+  border-radius: 50px;
+}
+
+h1 {
+  position: absolute;
+  top: -6%;
+  right: 9%;
+  height: 80px;
+  width: 170px;
+  color: #ffffff;
+  -webkit-text-stroke: 0.03em  #671f00;
+  font-size: 1.5em; /* Ajusta el tamaño del texto */
+  margin: 0; /* Elimina márgenes para centrar mejor */
 }

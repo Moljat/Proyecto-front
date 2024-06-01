@@ -1,9 +1,76 @@
 <section class="container">
     <img src="assets/coringa cook.svg" alt="" class="background">
     <img src="assets/FLECHA.png" alt="" class="overlay">
-    <div class="contenido-derecha">
-        <!-- AQUI VA IR LA TABLA CON EL CONTENIDO -->
-        se podria ganar
+
+    
+    <div class="contenido-derecha" >
+        <div class="menu">
+            
+        <nav class="navbar">
+            <div class="tituC"></div>
+            <h1>Cantidad</h1>
+            
+          <ul>
+            
+            <li>
+                <span style="display: inline-block; vertical-align: middle;">
+                    <img src="/assets/2.png" style="height: 2em; width: auto; vertical-align: middle;">
+                  </span>
+              <span>Jambalaya 250$ </span>
+              <input id="v1" type="number" min="0" max="30" [(ngModel)]="cantidades[0]" (input)="calculateTotal()">
+            </li>
+
+            <li>
+                <span style="display: inline-block; vertical-align: middle;">
+                    <img src="/assets/2.png" style="height: 2em; width: auto; vertical-align: middle;">
+                  </span>
+              <span>Curry Leblanc 150$</span>
+              <input id="v2" type="number" min="0" max="30" [(ngModel)]="cantidades[1]" (input)="calculateTotal()">
+            </li>
+
+            <li>
+                <span style="display: inline-block; vertical-align: middle;">
+                    <img src="/assets/2.png" style="height: 2em; width: auto; vertical-align: middle;">
+                  </span>
+              <span>Estofado de Gyutan 175$</span>
+              <input id="v3" type="number" min="0" max="30" [(ngModel)]="cantidades[2]" (input)="calculateTotal()">
+            </li>
+            
+            <li>
+                <span style="display: inline-block; vertical-align: middle;">
+                    <img src="/assets/2.png" style="height: 2em; width: auto; vertical-align: middle;">
+                  </span>
+                <span>Okinawa Soba 120$</span>
+                <input id="v4" type="number" min="0" max="30" [(ngModel)]="cantidades[3]" (input)="calculateTotal()">
+              </li>
+
+              <li>
+                <span style="display: inline-block; vertical-align: middle;">
+                    <img src="/assets/2.png" style="height: 2em; width: auto; vertical-align: middle;">
+                  </span>
+                <span>Sopa de Cabra 140$</span>
+                <input id="v5" type="number" min="0" max="30" [(ngModel)]="cantidades[4]" (input)="calculateTotal()">
+              </li>
+
+          </ul>
+        </nav>
+        <!-- Div de menu -->
+        
+        </div>
+        <div class="input-section">
+
+            <label class="Total" for="valor1">Total del Pedido</label>
+          <input id="valor1" type="number" [value]="totalPrecio" readonly>
+
+        </div>
+          
+          
+        
+    
+        
+    
+    <!-- Div de contenido a la derecha -->
     </div>
+    
 </section>
 

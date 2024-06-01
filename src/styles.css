@@ -6,4 +6,7 @@ body{
 @font-face {
     font-family: 'Old Figaro Cursive';
     src: url('assets/fonts/Old Figaro Cursive.ttf') format('truetype');
+
+    font-family: 'p5hatty';
+    src: url('assets/fonts/p5hatty-1.ttf') format('truetype');
   }
