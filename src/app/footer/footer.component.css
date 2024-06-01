@@ -12,7 +12,7 @@ body {
     padding: 20px 0;
     text-align: center;
     width: 100%;
-    font-size: 1.5em;
+    
   }
   
   .footer-content {
@@ -58,3 +58,26 @@ body {
     margin-right: 10px;
   }
   
+  .text-with-border {
+    font-size: 80px;
+    
+    position: relative;
+    color: #FFFBEC; /* Color del texto */
+    text-shadow:
+      0px 0px 0 #B00400,
+      2px -1px 0 #B00400,
+      -3px 3px 0 #B00400,
+      3px 3px 0 #B00400; /* Color del borde */
+  }
+
+  .text-with-border2 {
+    font-size: 40px;
+    
+    position: relative;
+    color: #FFFBEC; /* Color del texto */
+    text-shadow:
+      0px 0px 0 #000000,
+      2px -1px 0 #000000,
+      -3px 3px 0 #000000,
+      3px 3px 0 #000000; /* Color del borde */
+  }
