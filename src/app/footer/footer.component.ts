@@ -13,7 +13,7 @@ export class FooterComponent {
 
     Participantes: string[] = [
       'Erick Omar Olivas Montes',
-      'Andrea Morales CHAVEZ',
+      'Andrea Morales Chavez',
       'Biomara Valenzula Godina',
      
     ];
