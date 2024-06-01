@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 
@@ -11,6 +11,9 @@ import { FormsModule } from '@angular/forms';
 })
 export class CuerpoComponent {
 
+  @ViewChild('audioElement') audioElement!: ElementRef<HTMLAudioElement>;
+  @ViewChild('audioElement2') audioElement2!: ElementRef<HTMLAudioElement>;
+
   title = 'Conteo de Precios';
   cantidades: number[] = [0,0,0,0,0];
   precios: number[] = [250,150,175,120,140];
@@ -21,5 +24,15 @@ export class CuerpoComponent {
     this.totalPrecio = this.cantidades.reduce((total, qty, index) => total + qty * this.precios[index], 0);
   }
 
+  playSound() {
+    const audio: HTMLAudioElement = this.audioElement.nativeElement;
+    audio.play();
+    
+  }
+  playSound2() {
+    const audio: HTMLAudioElement = this.audioElement2.nativeElement;
+    audio.play();
+    
+  }
 
 }

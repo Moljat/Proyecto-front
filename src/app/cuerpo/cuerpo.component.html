@@ -1,76 +1,97 @@
+
+<audio #audioElement hidden>
+    <source src="assets/cursor.wav" type="audio/wav">
+
+  </audio>
+
+  <audio #audioElement2 hidden>
+    <source src="assets/Seleccion.mp3" type="audio/mp3">
+
+  </audio>
+
 <section class="container">
     <img src="assets/coringa cook.svg" alt="" class="background">
-    <img src="assets/FLECHA.png" alt="" class="overlay">
-
     
-    <div class="contenido-derecha" >
-        <div class="menu">
-            
-        <nav class="navbar">
-            <div class="tituC"></div>
-            <h1>Cantidad</h1>
-            
-          <ul>
-            
-            <li>
-                <span style="display: inline-block; vertical-align: middle;">
-                    <img src="/assets/2.png" style="height: 2em; width: auto; vertical-align: middle;">
-                  </span>
-              <span>Jambalaya 250$ </span>
-              <input id="v1" type="number" min="0" max="30" [(ngModel)]="cantidades[0]" (input)="calculateTotal()">
-            </li>
+ 
 
-            <li>
-                <span style="display: inline-block; vertical-align: middle;">
-                    <img src="/assets/2.png" style="height: 2em; width: auto; vertical-align: middle;">
-                  </span>
-              <span>Curry Leblanc 150$</span>
-              <input id="v2" type="number" min="0" max="30" [(ngModel)]="cantidades[1]" (input)="calculateTotal()">
-            </li>
+    <section class ="sub-section">
+        <img src="assets/si.png" alt="" class="background2">
+        <div class="contenido-derecha">
+            <div class="tituC">
+                <h1 >Cantidad</h1>
+            </div>
 
-            <li>
-                <span style="display: inline-block; vertical-align: middle;">
-                    <img src="/assets/2.png" style="height: 2em; width: auto; vertical-align: middle;">
-                  </span>
-              <span>Estofado de Gyutan 175$</span>
-              <input id="v3" type="number" min="0" max="30" [(ngModel)]="cantidades[2]" (input)="calculateTotal()">
-            </li>
+         <section class="sub-sectionMenu">
+           
+            <div class="menu">
+       
+            <nav class="navbar">
+
+                
+              <ul>
+
+                <li (mouseover)="playSound()">
+                    <span style="display: inline-block; vertical-align: middle;">
+                        <img src="/assets/2.png" style="height: 2em; width: auto; vertical-align: middle;">
+                      </span>
+                  <span>Jambalaya 250$ </span>
+                  <input id="v1" type="number" min="0" max="30" [(ngModel)]="cantidades[0]" (input)="calculateTotal()">
+                </li>
+    
+                <li (mouseover)="playSound()">
+                    <span style="display: inline-block; vertical-align: middle;">
+                        <img src="/assets/2.png" style="height: 2em; width: auto; vertical-align: middle;">
+                      </span>
+                  <span>Curry Leblanc 150$</span>
+                  <input id="v2" type="number" min="0" max="30" [(ngModel)]="cantidades[1]" (input)="calculateTotal()">
+                </li>
+    
+                <li (mouseover)="playSound()">
+                    <span style="display: inline-block; vertical-align: middle;">
+                        <img src="/assets/2.png" style="height: 2em; width: auto; vertical-align: middle;">
+                      </span>
+                  <span>Estofado de Gyutan 175$</span>
+                  <input id="v3" type="number" min="0" max="30" [(ngModel)]="cantidades[2]" (input)="calculateTotal()">
+                </li>
+                
+                <li (mouseover)="playSound()">
+                    <span style="display: inline-block; vertical-align: middle;">
+                        <img src="/assets/2.png" style="height: 2em; width: auto; vertical-align: middle;">
+                      </span>
+                    <span>Okinawa Soba 120$</span>
+                    <input id="v4" type="number" min="0" max="30" [(ngModel)]="cantidades[3]" (input)="calculateTotal()">
+                  </li>
+    
+                  <li (mouseover)="playSound()">
+                    <span style="display: inline-block; vertical-align: middle;">
+                        <img src="/assets/2.png" style="height: 2em; width: auto; vertical-align: middle;">
+                      </span>
+                    <span>Sopa de Cabra 140$</span>
+                    <input id="v5" type="number" min="0" max="30" [(ngModel)]="cantidades[4]" (input)="calculateTotal()">
+                  </li>
+    
+              </ul>
+            </nav>
+            <!-- Div de menu -->
             
-            <li>
-                <span style="display: inline-block; vertical-align: middle;">
-                    <img src="/assets/2.png" style="height: 2em; width: auto; vertical-align: middle;">
-                  </span>
-                <span>Okinawa Soba 120$</span>
-                <input id="v4" type="number" min="0" max="30" [(ngModel)]="cantidades[3]" (input)="calculateTotal()">
-              </li>
-
-              <li>
-                <span style="display: inline-block; vertical-align: middle;">
-                    <img src="/assets/2.png" style="height: 2em; width: auto; vertical-align: middle;">
-                  </span>
-                <span>Sopa de Cabra 140$</span>
-                <input id="v5" type="number" min="0" max="30" [(ngModel)]="cantidades[4]" (input)="calculateTotal()">
-              </li>
-
-          </ul>
-        </nav>
-        <!-- Div de menu -->
-        
+            </div>
+        </section>
         </div>
-        <div class="input-section">
+            <section class="Pedido">
 
-            <label class="Total" for="valor1">Total del Pedido</label>
-          <input id="valor1" type="number" [value]="totalPrecio" readonly>
+                <div class="input-section">
+        
+                    <label class="Total" for="valor1">Total del Pedido</label>
+                  <input (mouseover)="playSound2()" id="valor1" type="number" [value]="totalPrecio" readonly>
+        
+                </div>
+            </section>
+        
 
-        </div>
-          
-          
-        
-    
-        
-    
-    <!-- Div de contenido a la derecha -->
-    </div>
+    </section>
     
 </section>
+
+
+  
 
